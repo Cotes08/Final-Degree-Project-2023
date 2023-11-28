@@ -1,0 +1,61 @@
+.mundo3D {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  border: 2px solid white;
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #e8c3c8 0%, #b49fce 100%);
+}
+
+.loader-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: 20%;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background: grey;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: green;
+  border-radius: 10px;
+}
+
+.loader-progress {
+  font-size: 24px;
+}

@@ -1,0 +1,281 @@
+/* CSS de la página de inicio del psicólogo */
+.container h1 {
+    color: #4CAF50;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pacientes h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.psychologist-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+}
+
+.psychologist-info h2 {
+    margin-bottom: 5px;
+}
+
+.psychologist-info p {
+    margin-bottom: 3px;
+}
+
+.patient-info {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+
+/* Css de la caja del paciente*/
+.patient-box {
+    flex-basis: calc(30%);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.patient-box h3 {
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+.patient-box p {
+    margin-bottom: 3px;
+}
+
+/* Boton tanto de los pacientes como el de */
+.button-33 {
+    margin-top: 10px;
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-33:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+/* 
+/////////////////////////////////////////////////////////////////
+//////////// Estilos CSS para el chat del psicólogo /////////////
+/////////////////////////////////////////////////////////////////
+*/
+
+.body-container {
+    display: flex;
+}
+
+/*Css del modal del paciente*/
+.custom-chat {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 20px;
+    max-height: 85vh;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*CSS para el bloque de los mensajes*/
+.chat-container {
+    height: 500px;
+    min-height: 200px;
+    overflow-y: scroll;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    flex: 0 0 60%;
+}
+
+.custom-chat-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-chat-body {
+    padding: 2px;
+}
+
+.chat-section {
+    flex: 0 0 55%;
+}
+
+.custom-chat-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.chat-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+.button-back {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-light-success {
+    background-color: #b5f1c7;
+    border-color: #b5f1c7;
+    color: #006b00;
+}
+
+.btn-light-success:hover {
+    background-color: #9ed8b0;
+    border-color: #9ed8b0;
+    color: #006b00;
+}
+
+
+
+
+
+/* 
+/////////////////////////////////////////////////////////////////
+///////////// Css perteneciente al paciente /////////////////////
+/////////////////////////////////////////////////////////////////
+*/
+.custom-modal {
+    max-width: 40%;
+    margin: auto;
+    margin-top: 4%;
+    height: auto;
+    overflow: hidden;
+}
+
+.chat-container-usr {
+    height: 335px;
+    min-height: 200px;
+    overflow-y: scroll;
+    padding: 16px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 16px;
+}
+
+.chat-container-usr::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chat-container-usr::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 4px;
+}
+
+.custom-textarea {
+    height: 100px;
+    margin-top: 10px;
+}
+
+
+/* 
+/////////////////////////////////////////////////////////////////
+//////////// CSS que pertenece a ambos usuarios /////////////////
+/////////////////////////////////////////////////////////////////
+*/
+.mensaje {
+    background-color: #ddd;
+    padding: 8px 16px;
+    margin: 4px;
+    border-radius: 8px;
+    font-size: 14px;
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 80%;
+}
+
+.mensaje-paciente {
+    background-color: #aaf;
+    align-self: flex-start;
+}
+
+.mensaje-psicologo {
+    background-color: #ddd;
+    align-self: flex-end;
+}
+
+.mensaje-fecha {
+
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/*En el caso de que no haya mensajes*/
+.no-mensajes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+    color: #aaa;
+}
